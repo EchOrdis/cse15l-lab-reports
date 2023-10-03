@@ -1,4 +1,4 @@
-_Hello World_
+_Hello World_ 
 __Nice try__
 # title 1
 ## title 2
@@ -13,7 +13,7 @@ __Nice try__
 3. Three
 Horizontal rule:
 
-111
+---
 `Target` with backticks	
 ```
 # header
