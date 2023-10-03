@@ -1,7 +1,6 @@
 _Hello World_ 
 __Nice try__
 # title 1
-## title 2
 [Link](https://www.a.com)
 ![Image](http://url/a.png)
 > Blockquote
@@ -11,6 +10,7 @@ __Nice try__
 1. One
 2. Two
 3. Three
+## title 2
 Horizontal rule:
 
 ---
