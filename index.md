@@ -1,3 +1,7 @@
+[Link](Lab_1.md)
+
+
+
 _Hello World_ 
 __Nice try__
 # title 1
@@ -20,3 +24,4 @@ Horizontal rule:
 line 1
 line 2
 ```
+
