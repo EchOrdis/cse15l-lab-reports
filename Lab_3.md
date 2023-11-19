@@ -40,7 +40,7 @@ OK (2 tests)
 ```
 __symptom__
 ![Image](failure.png)<br>
-__before-and-after code__
+__before-and-after code__<br>
 __before__
 ```
   // Changes the input array to be in reversed order
@@ -61,4 +61,5 @@ __after__
     }
   }
 ```
+## Part 2
 
