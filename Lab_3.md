@@ -62,4 +62,71 @@ __after__
   }
 ```
 ## Part 2
+__command "find"__<br>
+option 1: search by type<br>
+_example 1: search all files_
+```
+[user@sahara ~/lab-report-3-folder]$ find -type f
+./failure.png
+./file_2
+./file_1
+```
+_example 2: search all directories_
+```
+[user@sahara ~/lab-report-3-folder]$ find -type d
+.
+./folder_1
+./folder_1/folder_2
+```
+option 2: search by size<br>
+_example 1: search all with size greater than 10bytes_
+```
+[user@sahara ~/lab-report-3-folder]$ find -size +10
+./failure.png
+```
+_example 2: search all with size less than 1MB_
+```
+[user@sahara ~/lab-report-3-folder]$ find -size -1M
+./file_2
+./file_1
+```
 
+option 3: search by time<br>
+_exampe 1: search for files modified in 7 days_
+```
+[user@sahara ~/lab-report-3-folder]$ find -mtime -7
+.
+./folder_1
+./folder_1/folder_2
+./failure.png
+./file_2
+./file_1
+```
+_exampe 2: search for files changed in 7 days_
+```
+[user@sahara ~/lab-report-3-folder]$ find -ctime -7
+.
+./folder_1
+./folder_1/folder_2
+./failure.png
+./file_2
+./file_1
+```
+option 4: search with cimbined conditions<br>
+
+_example 1: search all directories changed in 7 days_
+```
+[user@sahara ~/lab-report-3-folder]$ find -ctime -7 -and -type d
+.
+./folder_1
+./folder_1/folder_2
+```
+_example 2: search all directories or files with size greater than 1 MB_
+```
+[user@sahara ~/lab-report-3-folder]$ find -type d -or -size +1M
+.
+./folder_1
+./folder_1/folder_2
+./8fc39ba7
+```
+__Get help from chatGPT__
